@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vedang-portfolio/static/css/main.f950c373.css",
-    "main.js": "/vedang-portfolio/static/js/main.7b8947d1.js",
+    "main.js": "/vedang-portfolio/static/js/main.decac438.js",
     "static/js/787.fb771931.chunk.js": "/vedang-portfolio/static/js/787.fb771931.chunk.js",
     "static/media/color-sharp.png": "/vedang-portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/vedang-portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
@@ -23,11 +23,11 @@
     "static/media/nav-icon1.svg": "/vedang-portfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/nav-icon2.svg": "/vedang-portfolio/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
     "main.f950c373.css.map": "/vedang-portfolio/static/css/main.f950c373.css.map",
-    "main.7b8947d1.js.map": "/vedang-portfolio/static/js/main.7b8947d1.js.map",
+    "main.decac438.js.map": "/vedang-portfolio/static/js/main.decac438.js.map",
     "787.fb771931.chunk.js.map": "/vedang-portfolio/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f950c373.css",
-    "static/js/main.7b8947d1.js"
+    "static/js/main.decac438.js"
   ]
 }
