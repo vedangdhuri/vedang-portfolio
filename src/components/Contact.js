@@ -24,27 +24,55 @@ export const Contact = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
+  e.preventDefault();
+  setButtonText("Sending...");
+
+  // --- Replace with your actual Discord Webhook URL ---
+  const WEBHOOK_URL = "https://discord.com/api/webhooks/1425928175191588955/SUUYXU-qWCq22s20QzHesJRQEt7QNQgw9M5n7jd7QmoWQFkdoiauMSd3SWMhkHsac-ez";
+
+  // Create a formatted embed message for Discord
+  const payload = {
+    username: "Website Contact Form",
+    embeds: [
+      {
+        title: "📩 New Contact Form Submission",
+        color: 0x00b0f4,
+        fields: [
+          { name: "First Name", value: formDetails.firstName || "N/A", inline: true },
+          { name: "Last Name", value: formDetails.lastName || "N/A", inline: true },
+          { name: "Email", value: formDetails.email || "N/A", inline: true },
+          { name: "Phone", value: formDetails.phone || "N/A", inline: true },
+          { name: "Message", value: formDetails.message || "N/A" },
+        ],
+        footer: { text: "Message sent from Portfolio Contact Form" },
+        timestamp: new Date(),
+      },
+    ],
+  };
+
+  try {
+    const response = await fetch(WEBHOOK_URL, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json;charset=utf-8",
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify(formDetails),
+      body: JSON.stringify(payload),
     });
+
     setButtonText("Send");
-    let result = await response.json();
     setFormDetails(formInitialDetails);
-    if (result.code === 200) {
-      setStatus({ succes: true, message: "Message sent successfully" });
+
+    if (response.ok) {
+      setStatus({ success: true, message: "✅ Message sent successfully!" });
     } else {
-      setStatus({
-        succes: false,
-        message: "Something went wrong, please try again later.",
-      });
+      setStatus({ success: false, message: "❌ Failed to send message. Try again later." });
     }
-  };
+  } catch (error) {
+    console.error("Error sending message:", error);
+    setStatus({ success: false, message: "⚠️ Network error. Please try again." });
+  }
+};
+
 
   return (
     <section className="contact" id="connect">
