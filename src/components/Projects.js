@@ -1,7 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-// import projImg1 from "../assets/img/project-img1.png";
-// import projImg2 from "../assets/img/project-img2.png";
+import projImg1 from "../assets/img/safecityhub.png";
+import projImg2 from "../assets/img/aes-edcryption.png";
 // import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
@@ -9,16 +9,21 @@ import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
   const projects = [
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg1,
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg2,
-    // },
+    {
+      title: "Safe City Hub",
+      description:
+        "A Multi-Stakeholder Crime Reporting, Monitoring & Real-Time Urban Safety Management Platform",
+      imgUrl: projImg1,
+      alt: "Safe City Hub",
+      href: "https://github.com/vedangdhuri/SafeCity-Hub",
+    },
+    {
+      title: "AES Encryption and Decryption in Java",
+      description: "A Java application that implements the AES algorithm for secure text encryption and decryption.",
+      imgUrl: projImg2,
+      alt: "AES Encryption and Decryption",
+      href: "https://github.com/vedangdhuri/AES-Encryption-Decryption-Using-Java",
+    },
     // {
     //   title: "Business Startup",
     //   description: "Design & Development",
@@ -67,14 +72,14 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       {/* <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                    </Nav.Item> */}
+                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      </Nav.Item> */}
                     </Nav>
                     <Tab.Content
                       id="slideInUp"
@@ -90,11 +95,23 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       {/* <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane> */}
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Cumque quam, quod neque provident velit, rem
+                          explicabo excepturi id illo molestiae blanditiis,
+                          eligendi dicta officiis asperiores delectus quasi
+                          inventore debitis quo.
+                        </p>
+                      </Tab.Pane> */}
+                      {/* <Tab.Pane eventKey="third">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Cumque quam, quod neque provident velit, rem
+                          explicabo excepturi id illo molestiae blanditiis,
+                          eligendi dicta officiis asperiores delectus quasi
+                          inventore debitis quo.
+                        </p>
+                      </Tab.Pane> */}
                     </Tab.Content>
                   </Tab.Container>
                 </div>
