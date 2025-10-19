@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.css": "/vedang-portfolio/static/css/main.f950c373.css",
-    "main.js": "/vedang-portfolio/static/js/main.decac438.js",
-    "static/js/787.fb771931.chunk.js": "/vedang-portfolio/static/js/787.fb771931.chunk.js",
+    "main.css": "/vedang-portfolio/static/css/main.747006f4.css",
+    "main.js": "/vedang-portfolio/static/js/main.b51a4f21.js",
+    "static/js/787.d4c7f8e0.chunk.js": "/vedang-portfolio/static/js/787.d4c7f8e0.chunk.js",
+    "static/media/safecityhub.png": "/vedang-portfolio/static/media/safecityhub.38fb4f710a53dc3d64fb.png",
+    "static/media/aes-edcryption.png": "/vedang-portfolio/static/media/aes-edcryption.3bb731ebaf81daf092a2.png",
     "static/media/color-sharp.png": "/vedang-portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/vedang-portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/spaceman.png": "/vedang-portfolio/static/media/spaceman.2dd4e4da727820751dc7.png",
@@ -22,12 +24,12 @@
     "static/media/nav-icon1.svg": "/vedang-portfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "index.html": "/vedang-portfolio/index.html",
     "static/media/nav-icon2.svg": "/vedang-portfolio/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
-    "main.f950c373.css.map": "/vedang-portfolio/static/css/main.f950c373.css.map",
-    "main.decac438.js.map": "/vedang-portfolio/static/js/main.decac438.js.map",
-    "787.fb771931.chunk.js.map": "/vedang-portfolio/static/js/787.fb771931.chunk.js.map"
+    "main.747006f4.css.map": "/vedang-portfolio/static/css/main.747006f4.css.map",
+    "main.b51a4f21.js.map": "/vedang-portfolio/static/js/main.b51a4f21.js.map",
+    "787.d4c7f8e0.chunk.js.map": "/vedang-portfolio/static/js/787.d4c7f8e0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f950c373.css",
-    "static/js/main.decac438.js"
+    "static/css/main.747006f4.css",
+    "static/js/main.b51a4f21.js"
   ]
 }
