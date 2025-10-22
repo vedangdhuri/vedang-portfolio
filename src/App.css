@@ -538,6 +538,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
+#project-visit-button:hover {
+  background-color: #121212;
+  color: #fff;
+}
+
 /************ Projects Css ************/
 .contact {
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
