@@ -2,7 +2,7 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/safecityhub.png";
 import projImg2 from "../assets/img/aes-edcryption.png";
-// import projImg3 from "../assets/img/project-img3.png";
+import projImg3 from "../assets/img/to_do_list_using_react.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -19,16 +19,19 @@ export const Projects = () => {
     },
     {
       title: "AES Encryption and Decryption in Java",
-      description: "A Java application that implements the AES algorithm for secure text encryption and decryption.",
+      description:
+        "A Java application that implements the AES algorithm for secure text encryption and decryption.",
       imgUrl: projImg2,
       alt: "AES Encryption and Decryption",
       href: "https://github.com/vedangdhuri/AES-Encryption-Decryption-Using-Java",
     },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg3,
-    // },
+    {
+      title: "TO-DO-LIST-USING-REACT",
+      description:
+        "A responsive To-Do List app built with React.js that helps users efficiently organize tasks with an intuitive interface for adding, editing, deleting, and marking tasks as completed.",
+      imgUrl: projImg3,
+      href: "https://github.com/vedangdhuri/To-Do-List-Using-REACT",
+    },
     // {
     //   title: "Business Startup",
     //   description: "Design & Development",
@@ -73,11 +76,11 @@ export const Projects = () => {
                     >
                       {/* <Nav.Item>
                         <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
+                      </Nav.Item> */}
+                      {/* <Nav.Item>
                         <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
+                      </Nav.Item> */}
+                      {/* <Nav.Item>
                         <Nav.Link eventKey="third">Tab 3</Nav.Link>
                       </Nav.Item> */}
                     </Nav>
@@ -95,13 +98,11 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       {/* <Tab.Pane eventKey="section">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                        <Row>
+                          {projects.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
                       </Tab.Pane> */}
                       {/* <Tab.Pane eventKey="third">
                         <p>

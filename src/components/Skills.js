@@ -1,16 +1,34 @@
-import web_dev from "../assets/img/web_dev.png";
-import python from "../assets/img/python.png";
-import react from "../assets/img/react.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-// import arrow1 from "../assets/img/arrow1.svg";
-// import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png";
+import { useEffect } from "react";
 
 export const Skills = () => {
+  useEffect(() => {
+    // Disable right-click and dragging ONLY on .item elements
+    const handleContextMenu = (e) => {
+      if (e.target.closest(".item")) {
+        e.preventDefault();
+      }
+    };
+
+    const handleDragStart = (e) => {
+      if (e.target.closest(".item")) {
+        e.preventDefault();
+      }
+    };
+
+    document.addEventListener("contextmenu", handleContextMenu);
+    document.addEventListener("dragstart", handleDragStart);
+
+    return () => {
+      document.removeEventListener("contextmenu", handleContextMenu);
+      document.removeEventListener("dragstart", handleDragStart);
+    };
+  }, []);
+
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5,
     },
@@ -28,6 +46,20 @@ export const Skills = () => {
     },
   };
 
+  const skills = [
+    ["html", "HTML"],
+    ["css", "CSS"],
+    ["js", "JavaScript"],
+    ["c", "C"],
+    ["cpp", "C++"],
+    ["nodejs", "Node.js"],
+    ["java", "Java"],
+    ["python", "Python"],
+    ["reactjs", "React"],
+    ["django", "Django"],
+    ["figma", "Figma"],
+  ];
+
   return (
     <section className="skill" id="skills">
       <div className="container">
@@ -42,31 +74,41 @@ export const Skills = () => {
                 and Object-Oriented Programming (OOP), along with expertise in
                 UI/UX design using Figma. Beyond technical skills, I bring
                 strong leadership, teamwork, and problem-solving abilities to
-                every project I work on
+                every project I work on.
               </p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
+                draggable={true}
+                swipeable={true}
                 className="owl-carousel owl-theme skill-slider"
               >
-                <div className="item">
-                  <img src={web_dev} alt="Web Development" />
-                  <h5>Web Development</h5>
-                </div>
-                <div className="item">
-                  <img src={python} alt="Python" />
-                  <h5>Python</h5>
-                </div>
-                <div className="item" id="react">
-                  <img src={react} alt="React" />
-                  <h5>React</h5>
-                </div>
+                {skills.map(([icon, label]) => (
+                  <div
+                    className="item"
+                    key={icon}
+                    onContextMenu={(e) => e.preventDefault()} // disable right-click on item
+                    draggable="false" // prevent item drag
+                    onDragStart={(e) => e.preventDefault()}
+                  >
+                    <img
+                      src={`https://i.icoziv.workers.dev/icons?i=${icon}`}
+                      alt={label}
+                    />
+                    <h5>{label}</h5>
+                  </div>
+                ))}
               </Carousel>
             </div>
           </div>
         </div>
       </div>
-      <img className="background-image-left" src={colorSharp} alt="Background graphic" />
+      <img
+        className="background-image-left"
+        src={colorSharp}
+        alt="Background graphic"
+        draggable="false"
+      />
     </section>
   );
 };
