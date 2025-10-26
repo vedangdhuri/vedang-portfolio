@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/vedang-portfolio/static/css/main.5d26dc66.css",
-    "main.js": "/vedang-portfolio/static/js/main.e6dca362.js",
+    "main.js": "/vedang-portfolio/static/js/main.d139390a.js",
     "static/js/787.d4c7f8e0.chunk.js": "/vedang-portfolio/static/js/787.d4c7f8e0.chunk.js",
     "static/media/safecityhub.png": "/vedang-portfolio/static/media/safecityhub.38fb4f710a53dc3d64fb.png",
     "static/media/aes-edcryption.png": "/vedang-portfolio/static/media/aes-edcryption.3bb731ebaf81daf092a2.png",
     "static/media/color-sharp.png": "/vedang-portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
+    "static/media/to_do_list_using_react.png": "/vedang-portfolio/static/media/to_do_list_using_react.d06b243a805c2ddcb956.png",
     "static/media/color-sharp2.png": "/vedang-portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/spaceman.png": "/vedang-portfolio/static/media/spaceman.2dd4e4da727820751dc7.png",
     "static/media/CentraNo2-Bold.ttf": "/vedang-portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
@@ -13,10 +14,7 @@
     "static/media/CentraNo2-Book.ttf": "/vedang-portfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
     "static/media/galaxy_image.jpg": "/vedang-portfolio/static/media/galaxy_image.06e4baffa8e1346f07e8.jpg",
     "static/media/footer-bg.png": "/vedang-portfolio/static/media/footer-bg.7bd67c0f73571d0acc02.png",
-    "static/media/react.png": "/vedang-portfolio/static/media/react.17e5cb984343d1346ebd.png",
     "static/media/contact-img.svg": "/vedang-portfolio/static/media/contact-img.87eac2b29352fa01abb2f9510ef6ac7e.svg",
-    "static/media/python.png": "/vedang-portfolio/static/media/python.07a98139a3638f2a224b.png",
-    "static/media/web_dev.png": "/vedang-portfolio/static/media/web_dev.d88ec36c889ea5a99296.png",
     "static/media/revicons.eot": "/vedang-portfolio/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/vedang-portfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/vedang-portfolio/static/media/revicons.e8746a624ed098489406.woff",
@@ -25,11 +23,11 @@
     "index.html": "/vedang-portfolio/index.html",
     "static/media/nav-icon2.svg": "/vedang-portfolio/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
     "main.5d26dc66.css.map": "/vedang-portfolio/static/css/main.5d26dc66.css.map",
-    "main.e6dca362.js.map": "/vedang-portfolio/static/js/main.e6dca362.js.map",
+    "main.d139390a.js.map": "/vedang-portfolio/static/js/main.d139390a.js.map",
     "787.d4c7f8e0.chunk.js.map": "/vedang-portfolio/static/js/787.d4c7f8e0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5d26dc66.css",
-    "static/js/main.e6dca362.js"
+    "static/js/main.d139390a.js"
   ]
 }
